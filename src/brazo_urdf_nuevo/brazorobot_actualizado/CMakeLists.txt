@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(brazorobot_actualizado.SLDASM)
+project(brazorobot_actualizado)
 
 find_package(catkin REQUIRED)
 

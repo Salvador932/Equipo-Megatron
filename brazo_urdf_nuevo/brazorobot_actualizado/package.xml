@@ -3,8 +3,7 @@
   <version>1.0.0</version>
   <description>
     <p>URDF Description package for BRAZO_URDF_V3</p>
-    <p>This package contains configuration data, 3D models and launch files
-for BRAZO_URDF_V3 robot</p>
+    <p>This package contains configuration data, 3D models and launch files for BRAZO_URDF_V3 robot</p>
   </description>
   <author> salvador</author>
   <author> Carlos Hernandez</author>
