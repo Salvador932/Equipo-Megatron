@@ -4,6 +4,14 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="BRAZO_URDF_V3">
+
+  <link name="world"/>
+    <joint name="base_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.17"/>
+  </joint>
+
   <link
     name="eslabon base">
     <inertial>
@@ -409,5 +417,126 @@
     <dynamics
       damping="0"
       friction="0" />
+    <mimic
+      joint="GRIPPER_IZQUIERDO"
+      multiplier="1"
+      offset="0" />
   </joint>
+
+  <transmission name="ESLABON ROTACION_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="ESLABON ROTACION">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="ESLABON ROTACION_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="ESLABON ROTACION">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <transmission name="ESLABON DE BRAZO 1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="ESLABON DE BRAZO 1">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="ESLABON DE BRAZO 1_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="ESLABON DE BRAZO 1">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <transmission name="ESLABON DE BRAZO 2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="ESLABON DE BRAZO 2">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="ESLABON DE BRAZO 2_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="ESLABON DE BRAZO 2">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <transmission name="ESLABON BASE GRIPPER_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="ESLABON BASE GRIPPER">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="ESLABON BASE GRIPPER_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="ESLABON BASE GRIPPER">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <transmission name="GRIPPER_IZQUIERDO_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="GRIPPER_IZQUIERDO">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="GRIPPER_IZQUIERDO_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="GRIPPER_IZQUIERDO">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <transmission name="GRIPPER DERECHO_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="GRIPPER DERECHO">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface></joint>
+    <actuator name="GRIPPER DERECHO_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="control"
+    filename="libgazebo_ros_control.so">
+    <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="GRIPPER DERECHO">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+
+
 </robot>
