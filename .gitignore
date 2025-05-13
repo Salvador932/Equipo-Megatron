@@ -23,7 +23,9 @@ __pycache__/
 build/
 dist/
 install/
-log/
+logs/
+.catkin_tools/
+devel/
 
 # Configuración de Visual Studio Code
 .vscode/

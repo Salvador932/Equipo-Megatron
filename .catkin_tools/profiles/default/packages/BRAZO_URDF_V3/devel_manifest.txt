@@ -1,0 +1,5 @@
+BRAZO_URDF_V3
+/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3/cmake.lock /home/salvador/moveit_ws/devel/./cmake.lock
+/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3/share/BRAZO_URDF_V3/cmake/BRAZO_URDF_V3Config.cmake /home/salvador/moveit_ws/devel/share/BRAZO_URDF_V3/cmake/BRAZO_URDF_V3Config.cmake
+/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3/share/BRAZO_URDF_V3/cmake/BRAZO_URDF_V3Config-version.cmake /home/salvador/moveit_ws/devel/share/BRAZO_URDF_V3/cmake/BRAZO_URDF_V3Config-version.cmake
+/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3/lib/pkgconfig/BRAZO_URDF_V3.pc /home/salvador/moveit_ws/devel/lib/pkgconfig/BRAZO_URDF_V3.pc
