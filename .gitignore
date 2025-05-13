@@ -26,6 +26,8 @@ install/
 logs/
 .catkin_tools/
 devel/
+.ros
+
 
 # Configuración de Visual Studio Code
 .vscode/
