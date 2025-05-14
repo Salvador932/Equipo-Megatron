@@ -23,7 +23,13 @@ __pycache__/
 build/
 dist/
 install/
+<<<<<<< HEAD
 logs/
+=======
+log/
+logs/
+devel/
+>>>>>>> a8bc087ed979088ae5b222dc793dfb86a3e2eb9b
 .catkin_tools/
 devel/
 .ros
