@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: brazorobot_actualizado
+    relative_path: urdf/brazorobot_actualizado.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/brazorobot_actualizado.srdf
+  CONFIG:
+    author_name: salvador
+    author_email: salvadorloms392@gmail.com
+    generated_timestamp: 1747187396
