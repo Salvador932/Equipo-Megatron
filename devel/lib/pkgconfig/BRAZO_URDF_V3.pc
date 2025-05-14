@@ -1,1 +1,0 @@
-/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3/lib/pkgconfig/BRAZO_URDF_V3.pc

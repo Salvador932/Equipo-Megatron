@@ -1,8 +1,0 @@
-prefix=/home/salvador/moveit_ws/devel/.private/BRAZO_URDF_V3
-
-Name: BRAZO_URDF_V3
-Description: Description of BRAZO_URDF_V3
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
