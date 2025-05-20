@@ -23,7 +23,17 @@ __pycache__/
 build/
 dist/
 install/
+<<<<<<< HEAD
+logs/
+=======
 log/
+logs/
+devel/
+>>>>>>> a8bc087ed979088ae5b222dc793dfb86a3e2eb9b
+.catkin_tools/
+devel/
+.ros
+
 
 # Configuración de Visual Studio Code
 .vscode/
@@ -91,3 +101,4 @@ src/matlab/cinematica/cinematica_dir_completo.m
 src/matlab/cinematica/cinematica_inv_completo.mlx
 test/pruebaCinematicaDirecta.m
 era_robot/
+test/python_cinematica_inversa.ipynb
