@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
@@ -484,9 +483,9 @@
 <robot
   name="era_description">
   <link name="world"/>
-  <joint name="base_joint" type="fixed">
+  <joint name="joint_0" type="fixed">
     <parent link="world"/>
-    <child link="base_link"/>
+    <child link="link_0"/>
     <origin rpy="0 0 0" xyz="0.0 0.0 0.17"/>
   </joint>
   <link
@@ -1060,5 +1059,6 @@
   <gazebo reference="link_6_2">
     <selfCollide>true</selfCollide>
   </gazebo>
->>>>>>> 1aadc9f0b96d24d36a27c4f5cc28689f243edde6
+>>>>>>> 0b7ee9bf62c4770b665e7ad6efb5283ab96bef0d
+>>>>>>> c36853d15fc983cef04aa7b77c55944fcd843598
 </robot>
